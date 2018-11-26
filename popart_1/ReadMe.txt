@@ -1,40 +1,7 @@
-========================================================================
-    CONSOLE APPLICATION : popart_1 Project Overview
-========================================================================
+To read or not to read
 
-AppWizard has created this popart_1 application for you.
+Использовался Opencv v2.4.13
 
-This file contains a summary of what you will find in each of the files that
-make up your popart_1 application.
-
-
-popart_1.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-popart_1.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-popart_1.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named popart_1.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Запуск через консоль. Два параметра: путь к картинке и путь к приложенной csv в таком порядке.
+Алгоритм в лоб. В зависимости от яркости установить значение в цвет из из схемы из csv. Яркость считается по формуле и находится в 0..258.
+Потом на полученное изображение накладывается маска, гасящая зеленый цвет в зона
